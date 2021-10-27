@@ -68,10 +68,16 @@ public class MaquinaExpendedoraSimple {
         // Queda preparada para el proximo cliente
         balanceClienteActual = 0;
     }
+    
     public int getTotalDineroAcumulado(){
         return totalDineroAcumulado;
     }
+    
     public void setPrecioBillete(int precioDelBillete){
         precioBillete = precioDelBillete;
     }
+    public void reduceprecioBillete(int precioDelBillete){
+        precioBillete = precioBillete - precioDelBillete;
+    }
+    
 }
